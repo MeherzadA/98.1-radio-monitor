@@ -2,7 +2,7 @@
 
 A small script that listens to a live radio stream, transcribes it
 using OpenAI's [Whisper](https://github.com/openai/whisper) speech-to-
-text model, and sends a Telegram message whenever a chosen keyword is
+text model, and sends a Telegram message whenever the hourly keyword is
 mentioned on air.
 
 ## How it works
@@ -11,7 +11,7 @@ mentioned on air.
 
 1. Record a short clip (20 seconds by default) of the live stream with `ffmpeg`.
 2. Transcribe the clip with Whisper.
-3. Check the transcript for any of the configured keywords.
+3. Check the transcript if they mention something about a keyword
 4. If a keyword is found, send an alert to a Telegram chat.
 5. Delete the clip and repeat.
 
@@ -51,7 +51,7 @@ FFMPEG_PATH=ffmpeg
 python monitor.py
 ```
 
-You'll get a "monitor started" message on Telegram, then an alert
+You'll get a "tracking started" message on Telegram, then an alert
 message any time one of the keywords in `monitor.py` (`KEYWORDS`) is
 heard in the stream.
 
