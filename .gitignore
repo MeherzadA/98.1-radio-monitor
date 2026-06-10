@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local secrets and config
+.env
+
+# Audio clips recorded at runtime
+*.wav
+*.mp3
