@@ -5,6 +5,12 @@ using OpenAI's [Whisper](https://github.com/openai/whisper) speech-to-
 text model, and sends a Telegram message whenever the hourly keyword is
 mentioned on air.
 
+<img width="1125" height="767" alt="image" src="https://github.com/user-attachments/assets/10a71c7c-9a91-4b85-9c4c-eb8c9ba70df8" />
+
+<img width="1254" height="413" alt="image" src="https://github.com/user-attachments/assets/51557677-4cb7-45b5-ade7-856992097fa8" />
+
+
+
 ## How it works
 
 `monitor.py` runs a simple loop:
